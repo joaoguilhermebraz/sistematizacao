@@ -1,16 +1,30 @@
+var medicosData = [
+    {
+      "nome": "Dr. Carlos Santos",
+      "especialidade": "Dermatologista"
+    },
+    {
+      "nome": "Dr. João Silva",
+      "especialidade": "Cardiologia"
+    },
+    {
+      "nome": "Dra. Maria Oliveira",
+      "especialidade": "Pediatria"
+    },
+    {
+      "nome": "Dr. Carlos Santos",
+      "especialidade": "Ortopedia"
+    }
+  ];
+
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("medicos.json")
-        .then(response => response.json())
-        .then(data => {
-            const medicosList = document.getElementById("medicos-list");
-            data.forEach(medico => {
-                const listItem = document.createElement("li");
-                listItem.innerHTML = `
-                    <h3>${medico.nome}</h3>
-                    <p>Especialidade: ${medico.especialidade}</p>
-                `;
-                medicosList.appendChild(listItem);
-            });
-        })
-        .catch(error => console.error("Erro ao carregar dados:", error));
+    const medicosList = document.getElementById("medicos-list");
+    medicosData.forEach(medico => {
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `
+            <h3>${medico.nome}</h3>
+            <p>Especialidade: ${medico.especialidade}</p>
+        `;
+        medicosList.appendChild(listItem);
+    });
 });
