@@ -22,7 +22,6 @@
           "especialidade": "Ortopedia",
           "telefone": "(61) 9 9848-1524",
           "email": "carlos.santos@gmail.com"
-        },
-        
+        },       
 
 ]
