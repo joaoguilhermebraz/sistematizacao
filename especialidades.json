@@ -3,4 +3,7 @@
         "name": "Dermatologia",
         "description": "Nosso dermatologista, Dr. Carlos Santos, é um especialista altamente qualificado e dedicado em cuidar da saúde da sua pele. Com vasta experiência em diagnóstico e tratamento de uma variedade de condições dermatológicas, o Dr. Santos está comprometido em fornecer cuidados personalizados e eficazes para ajudar você a alcançar uma pele saudável e radiante."
     },
+    {   "name": "Cardiologia",
+        "description": "Cardiologia"
+    },
 ]
